@@ -3167,3 +3167,27 @@ main.curtain {
     opacity: 1;
   }
 }
+
+/* ── Telefon: yon tomondagi ismlar ko'rinsin ─────────────── */
+@media (max-width: 819px) {
+  /* Orqa fondagi kontur ismlar — karta ustida va ostida */
+  .backdrop-type {
+    justify-content: space-between;
+    padding: 9vh 0 3vh;
+  }
+  .bt-row {
+    font-size: clamp(3.4rem, 10.5vh, 6.5rem);
+    -webkit-text-stroke: 1px rgba(18, 18, 18, 0.16);
+  }
+  /* Ochilganda karta kichrayadi — qanotlar va ulardagi ismlar ekranga sig'adi */
+  .phase-open .scene {
+    transform: scale(0.74);
+  }
+  .phase-enter .scene {
+    transform: scale(0.8);
+  }
+  .lining-name {
+    font-size: calc(var(--w) * 0.19);
+    -webkit-text-stroke: 1px rgba(242, 239, 233, 0.4);
+  }
+}
